@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VolunteerMainPage">
+
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:hint="Full Name"
+        android:textColor="#000000"
+        android:textColorHint="#171616"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:hint="Home Address"
+        android:textColor="#020202"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:hint="Phone Number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:hint="Email Address"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFullName" />
+
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="411dp"
+        android:layout_height="120dp"
+        android:background="#FDF6F6"
+        android:backgroundTint="#FFFDFD"
+        android:calendarTextColor="#000000"
+        android:calendarViewShown="true"
+        android:clickable="true"
+        android:datePickerMode="spinner"
+        android:headerBackground="@color/black"
+        android:spinnersShown="true"
+        android:theme="@style/DatePickerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:dropDownWidth="wrap_content"
+        android:hint="Gender"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+    <EditText
+        android:id="@+id/etAltContact"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:hint="Alternative Contact Number"
+        android:textColor="#000000"
+        android:textColorHint="#0B0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+
+    <Spinner
+        android:id="@+id/spinnerAvailability"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Availability"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAltContact" />
+
+    <EditText
+        android:id="@+id/etSkills"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:hint="Skills"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAvailability" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="156dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSkills"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="208dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/small_logo" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLUNTEER FORM"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

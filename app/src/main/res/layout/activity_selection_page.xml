@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE0E0"
+    tools:context=".SelectionPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="737dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="@id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@id/linearLayout2">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/signUp_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="160dp"
+        android:text="SignUp As"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageButton
+        android:id="@+id/btnStudentLogin"
+        android:layout_width="137dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnDonorLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTeacherLogin"
+        app:srcCompat="@drawable/button2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="STUDENT"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/btnStudentLogin"
+        app:layout_constraintTop_toTopOf="@id/btnStudentLogin" />
+
+    <ImageButton
+        android:id="@+id/btnVolunteerLogin"
+        android:layout_width="137dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:text="VOLUNTEER"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnVolunteerLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnVolunteerLogin" />
+
+    <ImageButton
+        android:id="@+id/btnHelpLogin"
+        android:layout_width="137dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDonorLogin"
+        app:srcCompat="@drawable/button2" />
+
+    <ImageButton
+        android:id="@+id/btnDonorLogin"
+        android:layout_width="137dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVolunteerLogin"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTeacherLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnTeacherLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnTeacherLogin" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="68dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:text="DONOR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDonorLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnDonorLogin" />
+
+    <ImageButton
+        android:id="@+id/btnTeacherLogin"
+        android:layout_width="137dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolunteerLogin"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/button2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="Teacher"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTeacherLogin"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:text="Psychological"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnHelpLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnHelpLogin" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

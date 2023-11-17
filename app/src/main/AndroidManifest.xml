@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Afrika_Tikkun"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".LoadScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DonorMainPage"
+            android:exported="false"
+            android:label="Donor Main Page" />
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="false"
+            android:label="Forget Password" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Main Activity" />
+        <activity
+            android:name=".PsychologicalHelpLoginPage"
+            android:exported="false"
+            android:label="Login Page" />
+        <activity
+            android:name=".PsychologicalHelpMainPage"
+            android:exported="false"
+            android:label="Psychological Help Main Page" />
+        <activity
+            android:name=".SelectionPage"
+            android:exported="false"
+            android:label="Selection Page" />
+        <activity
+            android:name=".PsychologicalHelpSignUpPage"
+            android:exported="false"
+            android:label="Sign Up Page" />
+        <activity
+            android:name=".TeacherDashboard"
+            android:exported="false"
+            android:label="Teacher Dashboard" />
+        <activity
+            android:name=".StudentMainPage"
+            android:exported="false"
+            android:label="Student Main Page" />
+
+        <activity
+            android:name=".VolunteerMainPage"
+            android:exported="false"
+            android:label="Volunteer Main Page" />
+        <activity
+            android:name=".StudentSignUp"
+            android:label="Student Sign Up"
+            android:exported="false"/>
+
+        <activity
+            android:name=".StudentLogin"
+            android:label="Student Login"
+            android:exported="false"/>
+        <activity
+            android:name=".TeacherSignUpPage"
+            android:label="Teacher Sign Up"
+            android:exported="true"/>
+
+        <activity
+            android:name=".TeacherLoginPage"
+            android:label="Teacher Login"
+            android:exported="true"/>
+        <activity
+            android:name=".DonorSignUpPage"
+            android:label="Donor Sign Up"
+            android:exported="true"/>
+
+        <activity
+            android:name=".DonorLoginPage"
+            android:label="Donor Login"
+            android:exported="true"/>
+
+        <activity
+            android:name=".VolunteerSignUpPage"
+            android:label="volunteer Sign Up"
+            android:exported="true"/>
+
+        <activity
+            android:name=".VolunteerLoginPage"
+            android:label="Volunteer Login"
+            android:exported="true"/>
+        <activity
+            android:name=".LoginOrRegister"
+            android:label="Register or Login"
+            android:exported="true"/>
+        <activity
+            android:name=".SelectionPageLogin"
+            android:exported="false"
+            android:label="Selection Page Login" />
+        <activity
+            android:name=".WebsiteDisplayActivity"
+            android:exported="false"
+            android:label="Display website" />
+
+    </application>
+
+</manifest>

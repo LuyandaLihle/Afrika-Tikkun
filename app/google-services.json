@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192654057019",
+    "project_id": "afrika-tikkun-a14ae",
+    "storage_bucket": "afrika-tikkun-a14ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192654057019:android:66c3da9172fb81af21861e",
+        "android_client_info": {
+          "package_name": "com.example.afrika_tikkun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192654057019-0l87gpfovbh0citq5eig052qfnft6v0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwXn2QH5b9OQG4vz14EG0WEjxyEt8R7m4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192654057019-0l87gpfovbh0citq5eig052qfnft6v0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
